@@ -24,6 +24,16 @@ This is a **basic e-commerce web application** built with **React**. It includes
 - **CSS**: Tailwind CSS, Bootstrap
 
 
+## Future Plans
+
+- **Form Data Handling using React**: The app plans to implement features for handling and validating user input through forms, such as address details for checkout, in a frontend-only manner using controlled components. This will help with form validation and ensure a smooth user experience without requiring backend interaction.
+- **Enhanced Shopping Cart**: Future plans include improving the shopping cart's user experience, such as adding quantity control for items, implementing cart item removal, and saving the cart data across sessions using `localStorage` or other client-side storage options.
+- **UI/UX Enhancements**: Continuous improvements in the user interface and experience, like better responsiveness, smoother transitions, and more intuitive layouts for a polished look and feel.
+- **Checkout Flow Improvements**: Expanding the checkout process with form validation for user input (e.g., address details) and making it more user-friendly, still maintaining the frontend-only nature of the application.
+- **User Feedback & Reviews**: Adding a feature for users to leave reviews or ratings on products, enhancing interactivity, and providing more information to other users.
+
+
+
 ## Usage
 
 Once the application is running:
