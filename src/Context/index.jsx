@@ -27,9 +27,24 @@ function ShoppingCartProvider({ children }) {
 
         let cpyExistigOrders = [...orders]
 
-        cpyExistigOrders.push(
-            getOrder
-        )
+        let lastIndex=cpyExistigOrders.length-1;
+
+        console.log('inital last order id ' +lastIndex);
+        
+
+        
+            lastIndex=lastIndex+2
+        
+        
+
+        
+
+        console.log('updated last order id ' +lastIndex);
+        
+        cpyExistigOrders.push({
+           ...getOrder,
+           orderID :lastIndex
+        })
 
         localStorage.setItem('orders', JSON.stringify(cpyExistigOrders))
         setOrders(cpyExistigOrders);

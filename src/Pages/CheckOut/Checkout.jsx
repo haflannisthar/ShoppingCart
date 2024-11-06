@@ -45,14 +45,16 @@ navigate('/products')
         // Scroll to the top of the page
         window.scrollTo(0, 0);
 
-        setCartItems([]);
+      
 
         // Disable backdrop scrolling by adding a class that prevents scrolling
         document.body.style.overflow = 'hidden'; // Disables body scrolling
 
         setTimeout(() => {
             localStorage.removeItem('cartItems')
+            setCartItems([]);
             navigate('/products');
+
             // Redirect after animation finishes (5 seconds example)
         }, 5000); // Adjust this time to match the animation duration
 

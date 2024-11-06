@@ -5,6 +5,7 @@ import CartTile from "../../Components/CartTile";
 import Lottie from 'lottie-react';
 import EmptyCartAnimation from '../../assets/EmptyCartAnimation.json';
 import { Atom } from "react-loading-indicators";
+import TopNavBar from "../topNavBar";
 
 
 function CartList() {
@@ -30,7 +31,13 @@ function CartList() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto max-md:max-w-xl py-4">
+    <div className="container-fluid">
+
+
+      <TopNavBar/>
+
+      <div className="max-w-5xl mx-auto max-md:max-w-xl py-4">
+
       <h1 className="text-2xl font-bold text-gray-800 text-center">
         My Cart Page
       </h1>
@@ -100,6 +107,8 @@ function CartList() {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 }
 

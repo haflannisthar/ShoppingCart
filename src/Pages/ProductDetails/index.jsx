@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ShoppingCartContext } from "../../Context";
 import { Atom } from "react-loading-indicators";
+import TopNavBar from "../topNavBar";
 
 
 function ProductDetails() {
@@ -50,6 +51,7 @@ function ProductDetails() {
 
 
     return <div >
+         <TopNavBar/>
         <div className="p-6 lg:max-w-7xl max-w-4xl mx-auto">
             <div className="grid items-center grid-cols-1  lg:grid-cols-5 gap-12 shadow-sm p-6">
                 <div className="lg:col-span-3 w-full lg:sticky  top-0 text-center">

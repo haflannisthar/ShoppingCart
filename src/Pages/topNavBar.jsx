@@ -19,9 +19,16 @@ import {
 } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useLocation } from 'react-router-dom';
 
 export default function TopNavBar() {
   const [visible, setVisible] = useState(false);
+
+  const location=useLocation();
+
+
+  const isActive = (path) => location.pathname === path;
+
 
   return (
     <>
@@ -32,15 +39,15 @@ export default function TopNavBar() {
           <CCollapse className="navbar-collapse" visible={visible}>
             <CNavbarNav>
               <CNavItem>
-                <CNavLink href="/products" active>
+                <CNavLink href="/products" active={isActive('/products')}>
                   Products
                 </CNavLink>
               </CNavItem>
               <CNavItem>
-                <CNavLink href="/cart">Cart</CNavLink>
+                <CNavLink href="/cart" active={isActive('/cart')}>Cart</CNavLink>
               </CNavItem>
               <CNavItem>
-                <CNavLink href="/checkout">Checkout</CNavLink>
+                <CNavLink href="/checkout" active={isActive('/checkout')}>Checkout</CNavLink>
               </CNavItem>
              
             </CNavbarNav>

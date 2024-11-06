@@ -12,7 +12,8 @@ function App() {
 
   return <Fragment>
     <Routes>
-    <Route path="/products" element={<ProductList/>}/>
+      <Route path="/products" element={<ProductList/>}/>
+      <Route path="/" element={<ProductList/>}/>
     <Route path="/product-details/:id" element={<ProductDetails/>}/>
     <Route path="/cart" element={<CartList/>}/>
     <Route path="/checkout" element={<Checkout/>}/>
